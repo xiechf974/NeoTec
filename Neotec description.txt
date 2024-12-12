@@ -1,0 +1,20 @@
+Scope:
+The NeoTec initiative focuses on interface definition between Cloud orchestrator and Network controller, it aims to better SLA for cloud services (via optimized network paths) and network paths (via optimized capability in Cloud DCs). “Telecom Cloud Service Providers (TCSPs)” possess unique advantages in delivering cloud services with specific SLAs if they can leverage their ownership and management of the network infrastructures that interconnect clouds, particularly numerous edge clouds, where services are hosted. As TCSPs often rely on equipment from multiple vendors, standardized and interoperable solutions are essential to seamlessly integrate cloud and network resources. For instance, Machine Learning (ML) and Federated ML applications in 5G and beyond demand real-time optimization of network resources, particularly through adjusting network-wide load balancing to ensure sufficient bandwidth for these flows during the specific time span. Likewise, services traversing specific Service Function Paths can achieve significantly better quality and performance if Cloud DCs expose the environment and status of the Service Function instances they host. Since each Service Function typically has multiple instances distributed across various Cloud DCs, providing dynamic visibility into their availability, capacity, and performance allows the network to make more informed decisions.
+ 
+
+Requirements: 
+To meet this demand, the following features need to be achieved by the interface between cloud and network,
+•         First, network resource and capability need to be exposed to the cloud orchestrator to optimize the deployment of service function instances.
+•         Secondly, cloud can provide dynamic visibility into their availability, capacity and performance to network to schedule paths based on the real-time service environment. [Network controller can perform compute or service function-aware path scheduled when receiving computing-aware traffic scheduling policies.]
+•         Thirdly, given the multitude of computing services, this mechanism must be versatile enough to accommodate wide variety of cases.
+A unified model for compute-aware traffic scheduling needs to be defined, it will be a northbound interface of network controller and hide the technical details of the underlay network. 
+NeoTec will focus on the model design without extending any control or routing protocols. It will collaborate with other WGs, such as TEAS and CATS, to facilitate computing-aware traffic scheduling across the network, it can also serve as a platform for the industry to exchange requirements, challenges and experiences related to network operations for computing.
+
+
+Relation with other WGs:
+•     CATS focuses on how the network edge can steer traffic between clients of a service and sites offering the service, computing and networking metrics definition, the function is operated on nodes within the operator network. NeoTec defines a general service model for network wide load scheduling and balancing based on the by integration of network and compute information, CATS is one of the use cases where this model is applicable.
+•    ALTO(concluded WG) addressed exposing network conditions to endpoints and load balancing/service selection at layers 4 and 7, NeoTec differs from ALTO by introducing northbound traffic scheduling model based on integrating both network and compute conditions.
+•     TEAS is responsible for defining TE architecture and identifying required related routing and path computation element functions, it only takes the network capability information into consideration, NeoTec differs itself from TEAS by combining information of network capability, computing resource and service function located in clouds at different levels. NeoTec will collaborate with TEAS on traffic scheduling by combing this model with the TEAS architecture.
+•     SFC WG has concluded, it has designed the architecture and protocol that need to be addressed to enable effective deployment and usage of SFC, it has not done computing-related northbound interface definition. 
+
+
