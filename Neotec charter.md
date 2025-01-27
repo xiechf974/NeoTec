@@ -1,4 +1,4 @@
-Neotec 
+# Charter for Neotec 
 
 ##Background and Motivation
 
