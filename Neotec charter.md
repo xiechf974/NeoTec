@@ -22,7 +22,7 @@ The Neotec Working Group will initially focus on the following deliverables:
 
 The Neotec Working Group focuses on addressing the network issues, not that of cloud scheduling or management issues, they remain outside its scope. It does not aim to develop an orchestrator production system either.
 
-## Out of Scope:
+## Out of Scope
 * The Neotec Working Group does not handle service instance placement within cloud environments. Instead, it focuses on exposing relevant cloud metrics to network controllers for optimized network performance.
 
 * The Neotec Working Group will not define new cloud management protocols, but rather standardize the interfaces required for network-cloud coordination.
