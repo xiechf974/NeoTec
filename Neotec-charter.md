@@ -12,7 +12,7 @@ The Neotec Working Group will define standardized mechanisms and interfaces for 
 ## Work Items
 The Neotec Working Group will initially focus on the following deliverables:
 * Document groundwork via a set of informational Internet-Drafts, not necessarily for publication as RFCs, such as: use cases, requirements, problem statement and gap analysis.
-* Design the framework of network operation perception of cloud resources and service status, including the core mechanism, major components, and key interfaces. Provide a structured framework for policy-based traffic optimization among multi-edge clouds.
+* Design the framework of network operation aware of cloud resources and service status, including the key mechanism, major components, and main interfaces. Provide a structured framework for policy-based traffic optimization among multi-edge clouds.
 * Develops YANG models for exposing the resources and metric information from Cloud DC into the operation domain of the network to meet service needs. 
 * Develop YANG models to provide network controllers with dynamic service instance status to adjust network paths, or enable dynamic adjustments to load-balancing policies, ensuring dynamic policy updates across ingress, intermediate, and egress routers based on actual service demand and network conditions.
 * Develops a general flow scheduling/load balancing policy YANG model that can be applied to various connections (VPN, Internet connection, SD-WAN) to improve the throughput and efficiency of the service across telecom edge clouds. 
@@ -20,7 +20,7 @@ The Neotec Working Group will initially focus on the following deliverables:
 * Define a shim layer acting as middleware between cloud telemetry systems (e.g., AWS CloudWatch, Google Cloud Monitoring, Azure Monitor) and network controllers. Standardize APIs for network controllers to convert cloud metrics into IETF-compliant network telemetry formats (e.g., YANG, gRPC-based streaming, NetConf APIs).
 * Analyze the applicability of the standardized mechanisms and interfaces designed above. 
 
-The Neotec Working Group focuses on addressing the network issues, not that of cloud scheduling or management issues, they remain outside its scope. It does not aim to develop an orchestrator production system either.
+It should be noted that the Neotec Working Group focuses on addressing the network issues, not that of cloud scheduling or management issues, they remain outside its scope. It does not aim to develop an orchestrator production system either.
 
 ## Out of Scope
 * The Neotec Working Group does not handle service instance placement within cloud environments. Instead, it focuses on exposing relevant cloud metrics to network controllers for optimized network performance.
