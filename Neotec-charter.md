@@ -36,7 +36,4 @@ The Neotec Working Group will also serve as a platform for the community to exch
 * The Neotec Working Group will not define new cloud management protocols, but rather standardize the interfaces required for network-cloud coordination.
 
 
-## Out of Scope
-* The Neotec Working Group does not handle service instance placement within cloud environments. Instead, it focuses on exposing relevant cloud metrics to network controllers for optimized network performance.
 
-* The Neotec Working Group will not define new cloud management protocols, but rather standardize the interfaces required for network-cloud coordination.
