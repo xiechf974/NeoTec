@@ -1,5 +1,5 @@
 # Charter for Neotec(Network Operations in Telecom Cloud) 
- NetOps4Clouds might be chosen for naming the potential WG after the BoF.
+ Note：NetOps4Clouds might be chosen for naming the potential WG after the BoF.
 
 ## Background and Motivation
 
