@@ -26,7 +26,7 @@ The Neotec(NetOps4Clouds) Working Group will initially focus on the following de
 
 * Define models to dynamically adjust UCMP policies across ingress, intermediate, and egress routers based on dynamic cloud metrics. 
 
-It should be noted that the Neotec Working Group focuses on addressing the network issues, not that of cloud scheduling or management issues, they remain outside its scope. It does not aim to develop an orchestrator production system either.
+It should be noted that this Working Group focuses on addressing the network issues, not that of cloud scheduling or management issues, they remain outside its scope. It does not aim to develop an orchestrator production system either.
 
 This Working Group will also serve as a platform for the community to exchange requirements, challenges, and experiences related to network management and operation for cloud-based services.
 
