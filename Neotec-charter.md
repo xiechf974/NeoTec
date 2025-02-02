@@ -3,7 +3,7 @@
 
 ## Background and Motivation
 
-The Neotec(NetOps4Clouds) Working Group focuses on defining standardized interfaces for cloud-aware network operation environment, where network operators manage cloud infrastructures for services requiring strict SLA guarantees. It defines standardized interfaces, such as YANG models, to enable dynamic network policy adjustments—such as time-sensitive UCMP policies for routers—that accommodate the scaling of cloud-hosted services and ensure that adequate network resources are adjusted for the services in the clouds.
+The Neotec(NetOps4Clouds) Working Group focuses on defining standardized interfaces, such as YANG models, to enable dynamic network policy adjustments—such as time-sensitive UCMP policies for routers—that accommodate the scaling of cloud-hosted services and ensure that assured network resources are adjusted for the services in the clouds. This work will mainly be applied to cloud-aware network operation environment, where network operators manage cloud infrastructures for services requiring strict SLA guarantees. 
 
 Telecom clouds of network operators provide compute, storage, and networks to fulfill the Service Level Objectives (SLOs) required by user applications. Typically, telecom edge clouds undertake this task closer to the customer locations. Telecom edge clouds may have different types of processing resources (CPU, GPU, FPGA, etc.), and be dimensioned with less resource capacity compared to conventional DCs. Also, network management and operation systems (including, network controllers) have limited coordination with the cloud system even though they are both managed by the same network operator.
 
