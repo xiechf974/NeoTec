@@ -28,7 +28,7 @@ The Neotec(NetOps4Clouds) Working Group will initially focus on the following de
 
 It should be noted that the Neotec Working Group focuses on addressing the network issues, not that of cloud scheduling or management issues, they remain outside its scope. It does not aim to develop an orchestrator production system either.
 
-The Neotec Working Group will also serve as a platform for the community to exchange requirements, challenges, and experiences related to network management and operation for cloud-based services.
+This Working Group will also serve as a platform for the community to exchange requirements, challenges, and experiences related to network management and operation for cloud-based services.
 
 ## Out of Scope
 * The Working Group does not handle service instance placement within cloud environments. Instead, it focuses on exposing relevant cloud metrics to network controllers for optimized network performance.
