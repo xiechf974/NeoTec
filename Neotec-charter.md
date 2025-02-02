@@ -18,7 +18,7 @@ As network operators often rely on equipment and controllers from multiple vendo
 The Neotec(NetOps4Clouds) Working Group will initially focus on the following deliverables:
 * Document groundwork via a set of informational Internet-Drafts, not necessarily for publication as RFCs, such as: use cases, requirements, problem statement,  gap analysis, applicability analysis, etc..
 
-* Design the framework of network operation aware of cloud resources and service status, including the key mechanism, major components, and main interfaces. Provide a structured framework for policy-based traffic optimization among multi-edge clouds. This document is considered as "living" documents to guide the WG.
+* Design the framework of network operation aware of cloud resources and service status, including the key mechanism, major components, and main interfaces. Provide a structured framework for policy-based traffic optimization among multi-edge clouds. This document is considered as a "living" document to guide the WG.
 
 * Develop YANG models to provide network controllers with dynamic service instance status, ensuring dynamic network adjustments—including UCMP (Unequal Cost Multipath) policy updates and adaptive load balancing—whenever cloud services scale up or down. These updates allow the network to seamlessly accommodate changes without requiring detailed visibility into internal cloud structures.
 
