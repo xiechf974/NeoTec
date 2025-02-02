@@ -3,7 +3,7 @@
 
 ## Background and Motivation
 
-The Neotec Working Group focuses on defining standardized interfaces for cloud-aware network operation environment, where network operators manage cloud infrastructures for services requiring strict SLA guarantees. It defines standardized interfaces, such as YANG models, to enable dynamic network policy adjustments—such as time-sensitive UCMP policies for routers—that accommodate the scaling of cloud-hosted services and ensure that adequate network resources are adjusted for the services in the clouds.
+The Neotec(NetOps4Clouds) Working Group focuses on defining standardized interfaces for cloud-aware network operation environment, where network operators manage cloud infrastructures for services requiring strict SLA guarantees. It defines standardized interfaces, such as YANG models, to enable dynamic network policy adjustments—such as time-sensitive UCMP policies for routers—that accommodate the scaling of cloud-hosted services and ensure that adequate network resources are adjusted for the services in the clouds.
 
 Telecom clouds of network operators provide compute, storage, and networks to fulfill the Service Level Objectives (SLOs) required by user applications. Typically, telecom edge clouds undertake this task closer to the customer locations. Telecom edge clouds may have different types of processing resources (CPU, GPU, FPGA, etc.), and be dimensioned with less resource capacity compared to conventional DCs. Also, network management and operation systems (including, network controllers) have limited coordination with the cloud system even though they are both managed by the same network operator.
 
@@ -15,7 +15,7 @@ The Working Group will define standardized mechanisms for dynamic exchange of cl
 As network operators often rely on equipment and controllers from multiple vendors, standardized and interoperable solutions are essential for the network management and operation to be cloud-aware.
 
 ## Work Items
-The Neotec Working Group will initially focus on the following deliverables:
+The Neotec(NetOps4Clouds) Working Group will initially focus on the following deliverables:
 * Document groundwork via a set of informational Internet-Drafts, not necessarily for publication as RFCs, such as: use cases, requirements, problem statement,  gap analysis, applicability analysis, etc..
 
 * Design the framework of network operation aware of cloud resources and service status, including the key mechanism, major components, and main interfaces. Provide a structured framework for policy-based traffic optimization among multi-edge clouds. This document is considered as "living" documents to guide the WG.
@@ -31,9 +31,9 @@ It should be noted that the Neotec Working Group focuses on addressing the netwo
 The Neotec Working Group will also serve as a platform for the community to exchange requirements, challenges, and experiences related to network management and operation for cloud-based services.
 
 ## Out of Scope
-* The Neotec Working Group does not handle service instance placement within cloud environments. Instead, it focuses on exposing relevant cloud metrics to network controllers for optimized network performance.
+* The Working Group does not handle service instance placement within cloud environments. Instead, it focuses on exposing relevant cloud metrics to network controllers for optimized network performance.
 
-* The Neotec Working Group will not define new cloud management protocols, but rather standardize the interfaces required for network-cloud coordination.
+* The Working Group will not define new cloud management protocols, but rather standardize the interfaces required for network-cloud coordination.
 
 
 
