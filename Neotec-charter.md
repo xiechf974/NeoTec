@@ -20,11 +20,11 @@ The Neotec(NetOps4Clouds) Working Group will initially focus on the following de
 
 * Design the framework of network operation aware of cloud resources and service status, including the key mechanism, major components, and main interfaces. Provide a structured framework for policy-based traffic optimization among multi-edge clouds. This document is considered as "living" documents to guide the WG.
 
-* Develop YANG models to provide network controllers with dynamic service instance status, ensuring dynamic network adjustments—including UCMP policy updates and adaptive load balancing—whenever cloud services scale up or down. These updates allow the network to seamlessly accommodate changes without requiring detailed visibility into internal cloud structures.
+* Develop YANG models to provide network controllers with dynamic service instance status, ensuring dynamic network adjustments—including UCMP (Unequal Cost Multipath) policy updates and adaptive load balancing—whenever cloud services scale up or down. These updates allow the network to seamlessly accommodate changes without requiring detailed visibility into internal cloud structures.
 
 * Define a shim layer acting as middleware between cloud telemetry systems (e.g., AWS CloudWatch, Google Cloud Monitoring, Azure Monitor) and network controllers. Standardize APIs for network controllers to convert cloud metrics into IETF-compliant network telemetry formats (e.g., YANG, gRPC-based streaming, NetConf APIs).
 
-* Define models to dynamically adjust UCMP (Unequal Cost Multipath) policies across ingress, intermediate, and egress routers based on dynamic cloud metrics. 
+* Define models to dynamically adjust UCMP policies across ingress, intermediate, and egress routers based on dynamic cloud metrics. 
 
 It should be noted that the Neotec Working Group focuses on addressing the network issues, not that of cloud scheduling or management issues, they remain outside its scope. It does not aim to develop an orchestrator production system either.
 
