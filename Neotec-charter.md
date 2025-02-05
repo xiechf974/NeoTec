@@ -3,7 +3,7 @@
 
 ## Background and Motivation
 
-The Neotec(NetOps4Clouds) Working Group focuses on defining standardized interfaces, such as YANG models, to enable dynamic network policy adjustments—such as time-sensitive UCMP policies for routers—that accommodate the scaling of cloud-hosted services and ensure that assured network resources are adjusted for the services in the clouds. This work will mainly be applied to cloud-aware network operation environment, where network operators manage cloud infrastructures for services requiring strict SLA guarantees. 
+The Neotec(NetOps4Clouds) Working Group focuses on defining standardized interfaces, such as YANG models, to enable dynamic network policy adjustments—such as time-sensitive UCMP (Unequal Cost Multipath) policies for routers—that accommodate the scaling of cloud-hosted services and ensure that assured network resources are adjusted for the services in the clouds. This work will mainly be applied to cloud-aware network operation environment, where network operators manage cloud infrastructures for services requiring strict SLA guarantees. 
 
 Telecom clouds of network operators provide compute, storage, and networks to fulfill the Service Level Objectives (SLOs) required by user applications. Typically, telecom edge clouds undertake this task closer to the customer locations. Telecom edge clouds may have different types of processing resources (CPU, GPU, FPGA, etc.), and be dimensioned with less resource capacity compared to conventional DCs. Also, network management and operation systems (including network controllers) have limited coordination with the cloud system even though they are both managed by the same network operator.
 
@@ -20,7 +20,7 @@ The Neotec(NetOps4Clouds) Working Group will initially focus on the following de
 
 * Design the framework of network operation aware of cloud resources and service status, including the key mechanism, major components, and main interfaces. Provide a structured framework for policy-based traffic optimization among multi-edge clouds. This document is considered as a "living" document to guide the WG.
 
-* Develop YANG models to provide network controllers with dynamic service instance status, ensuring dynamic network adjustments—including UCMP (Unequal Cost Multipath) policy updates and adaptive load balancing—whenever cloud services scale up or down. These updates allow the network to seamlessly accommodate changes without requiring detailed visibility into internal cloud structures.
+* Develop YANG models to provide network controllers with dynamic service instance status, ensuring dynamic network adjustments—including UCMP policy updates and adaptive load balancing—whenever cloud services scale up or down. These updates allow the network to seamlessly accommodate changes without requiring detailed visibility into internal cloud structures.
 
 * Define models to dynamically adjust policies across ingress, intermediate, and egress routers based on dynamic cloud metrics. 
 
