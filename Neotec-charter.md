@@ -3,35 +3,29 @@
 
 ## Background and Motivation
 
-The Neotec (NetOps4Clouds) Working Group focuses on defining standardized interfaces, such as YANG models, to enable dynamic network policy adjustments for the clouds managed by operators. These adjustments include time-sensitive UCMP (Unequal Cost Multipath) policies for routers, which accommodate the scaling of cloud-hosted services and ensure that network resources are adjusted to meet their needs. This work will mainly be applied to cloud-aware network operation environment, where network operators manage cloud infrastructures for services requiring strict SLA guarantees. 
-
-For this case of network operation, the term of "telecom clouds" refers to the cloud infrastructure that is managed by network operators. Telecom clouds provide compute (CPU, GPU, FPGA, etc.), storage, and networks to fulfill the Service Level Objectives (SLOs) required by user applications. Typically, telecom edge clouds undertake this task closer to the customer locations, and are dimensioned with less resource capacity compared to conventional DCs. Also, network management and operation systems (including network controllers) have limited coordination with the cloud system even though they are both managed by the same network operator. While cloud services can scale dynamically using mechanisms like ACaaS, network controllers are often unaware of these changes timely. Without this awareness, they can not adjust network resources, load balancing, or time-sensitive UCMP policies, potentially leading to SLA violations and inefficient resource utilization. This limitation also impacts the performance and reliability of cloud-based services such as video and AI/ML applications. 
-
-Network operations must be aware of cloud resources and service status to provide guaranteed SLA for the services hosted in multiple clouds by providing assured bandwidth and latency. As network operators often rely on equipment and controllers from multiple vendors, standardized and interoperable solutions are essential for the network management and operation to be cloud-aware. The absence of standardized interfaces for cloud-aware network operation and coordination remains a significant challenge.
+The Neotec (NetOps4Clouds) initiative aims to define standardized, underlay-agnostic interfaces—built on top of IETF YANG models—that can be consumed by cloud orchestrators such as Kubernetes. These interfaces enable dynamic coordination between network control systems and cloud infrastructure, allowing the network to adapt in real time to the scaling and shifting demands of cloud-hosted services.
+Telecom operators increasingly rely on edge cloud infrastructure to deliver latency-sensitive and resource-intensive services closer to end users. These edge sites often have more constrained capacity than centralized data centers. However, despite often being managed by the same operator, network controllers and cloud orchestrators typically operate in silos, with limited visibility or interaction between them.
+Today, cloud and network systems often operate in silos, leading to poor visibility and delayed response to changes. Neotec addresses this challenge by specifying a middleware layer and YANG-based interface models that translate cloud service scaling events and queries into actionable network control inputs—without exposing the internal structure of cloud workloads. These models enable the network to dynamically respond to changes in service instance placement, scale-in/out events, or application locality shifts, ensuring guaranteed bandwidth, latency, and reliability for services spanning multiple cloud domains.
 
 ## Goals and Scope
-The Neotec (NetOps4Clouds) Working Group will define standardized mechanisms for dynamic exchange of cloud resource status and service instance changes，so the network controller can update policies in response to cloud scaling events, ensuring the necessary network adjustments without exposing internal service structures. A key focus is a shim layer that bridges cloud telemetry and network controllers, ensuring seamless API integration between cloud and network environments. Specifically, it will focus on defining data models to enable dynamic coordination between a cloud-aware service orchestrator and existing network controllers and cloud managers. The term "cloud-aware service orchestrator" refers to a functional component at network operation domain that is capable of dynamically managing networks (e.g., fixed, mobile access, metro networks, or backbone networks etc.) for optimizing services deployment across clouds. These models will provide abstracted cloud resource metrics and service status updates, enabling dynamic network policy adjustments, such as dynamic UCMP changes and adaptive load-balancing—whenever cloud services scale up or down. This ensures that the network can allocate adequate resources to support cloud-hosted services while maintaining SLA guarantees. 
+The Neotec initiative focuses on enabling cloud-aware network operations by developing underlay-agnostic abstractions and interfaces that allow cloud orchestrators—such as Kubernetes—to interact with the network in a standardized, intent-driven manner.
+While existing IETF-developed YANG models (e.g.,L2SM,  L3SM, L2NM, L3NM) are tied to specific technologies or service types (e.g., L3VPN, L2VPN), Neotec aims to define a technology-neutral interface layer that exposes essential network behaviors and capabilities—such as connectivity, available bandwidth, latency, and path diversity—without requiring the orchestrator to understand the underlying network implementation.
+As network operators often rely on equipment and controllers from multiple vendors, standardized and interoperable solutions are essential for the network management and operation to be cloud-aware. 
 
 ## Work Items
 The Neotec (NetOps4Clouds) Working Group will initially focus on the following deliverables:
-* Document groundwork via a set of informational Internet-Drafts, not necessarily for publication as RFCs, such as: use cases, requirements, problem statement, gap analysis, applicability analysis, etc.
+* Defining abstraction models and APIs that expose dynamic network characteristics (e.g., telemetry, service path metrics, ingress/egress status) in a way that is usable by cloud-native systems for service placement, scaling, and path optimization.
 
-* Design the framework of network operation aware of cloud resources and service status, including the key mechanism, major components, and main interfaces. Provide a structured framework for policy-based traffic optimization among multi-edge clouds. This document is considered as a "living" document to guide the WG.
+* Designing a shim layer that bridges cloud telemetry and orchestration systems (e.g., Kubernetes, OpenStack, Azure Stack) with existing IETF network models, enabling translation of cloud-scale events (e.g., service up/down, resource scaling) into actionable network control inputs.
 
 * Develop YANG models to provide network controllers with dynamic service instance status, ensuring dynamic network adjustments—including UCMP policy updates and adaptive load balancing—whenever cloud services scale up or down. These updates allow the network to seamlessly accommodate changes without requiring detailed visibility into internal cloud structures.
 
-* Define YANG models to dynamically adjust policies across ingress, intermediate, and egress routers based on dynamic cloud metrics. 
+* Contributing to the YANG2API effort by specifying the semantic and behavioral constructs needed to make IETF YANG models practically consumable via open APIs (e.g., REST, gRPC) in cloud-native environments. 
 
-* Define a shim layer acting as middleware between cloud telemetry systems (e.g., AWS CloudWatch, Google Cloud Monitoring, Azure Monitor) and network controllers. Standardize APIs for network controllers to convert cloud metrics into IETF-compliant network telemetry formats (e.g., YANG, gRPC-based streaming, NetConf APIs).
-
-It should be noted that this Working Group focuses on addressing the network operation issues, not cloud scheduling or management issues, they remain outside its scope. It does not aim to develop an orchestrator production system either.
-
-This Working Group will also serve as a platform for the community to exchange requirements, challenges, and experiences related to network management and operation for cloud-based services.
+It should be noted that the Neotec Working Group focuses on addressing the network issues, not that of cloud scheduling or management issues, they remain outside its scope. It does not aim to develop an orchestrator production system either.
+The Neotec Working Group will also serve as a platform for the community to exchange requirements, challenges, and experiences related to network management and operation for cloud-based services.
 
 ## Out of Scope
 * The Working Group does not handle service instance placement within cloud environments. Instead, it focuses on exposing relevant cloud metrics to network controllers for optimized network performance.
 
 * The Working Group will not define new cloud management protocols, but rather standardize the interfaces required for network-cloud coordination.
-
-
-
