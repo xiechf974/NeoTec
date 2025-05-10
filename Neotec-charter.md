@@ -1,4 +1,4 @@
-# Charter for Neotec(Network Operations in Telecom Cloud) 
+# Charter for Neotec (Network Operations in Telecom Cloud) 
  
 ## Background and Motivation
 
