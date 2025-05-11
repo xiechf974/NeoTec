@@ -14,10 +14,9 @@ Neotec will initially focus on the following deliverables:
 
 * Designing a extensible shim layer that bridges cloud telemetry and orchestration systems (e.g., Kubernetes, OpenStack, Azure Stack) with existing IETF network models, enabling translation of cloud-scale events (e.g., service up/down, resource scaling) into actionable network control inputs.
 
-* Develop YANG models to provide network controllers with dynamic service instance status, resulting in dynamic network adjustments—including UCMP policy updates and adaptive load balancing—whenever cloud services scale up or down. These updates allow the network to seamlessly accommodate changes without requiring detailed visibility into internal cloud structures.
+* Develop YANG models to provide network controllers with cloud service instance status, dynamic adjustment to network connections and traffic steering policies—whenever cloud services scale up or down. These updates allow the network to seamlessly accommodate changes without requiring detailed visibility into internal cloud structures.
 
 * Contributing to the YANG2API effort by specifying the semantic and behavioral constructs needed to make IETF YANG models practically consumable via open APIs (e.g., REST, gRPC) in cloud-native environments. 
-
 
 Neotec will also serve as a platform for the community to exchange requirements, challenges, and experiences related to network management and operation for cloud-based services.
 
