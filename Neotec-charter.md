@@ -23,4 +23,4 @@ Neotec will also serve as a platform for the community to exchange requirements,
 
 
 ## Out of Scope
-It should be noted that Neotec focuses on addressing the network issues, not that of cloud scheduling or management issues. It does not handle service instance placement within cloud environments. Instead, it focuses on providing relevant cloud metrics to network for optimized network performance. It does not aim to develop an orchestrator production system either.
+It should be noted that Neotec focuses on addressing the network issues, not that of cloud scheduling or management issues. It does not handle service instance placement within cloud environments. Instead, it focuses on providing relevant information between cloud and network to achieve joint optimization for cloud-based services. It does not aim to develop an orchestrator production system either.
