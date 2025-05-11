@@ -10,7 +10,7 @@ The Neotec initiative focuses on enabling cloud-aware network operations and net
 
 ## Work Items
 Neotec will initially focus on the following deliverables:
-* Defining abstraction models and APIs that expose dynamic network characteristics (e.g., telemetry, service path metrics, ingress/egress status, and topological information, etc.) in a way that is usable by cloud-native systems for service placement, scaling, and path optimization.
+* Defining abstraction models and APIs that expose dynamic network characteristics (e.g., telemetry, service path metrics, ingress/egress status, and topological information, etc.) in a way that is usable by cloud-native systems for service placement and scaling.
 
 * Designing a extensible shim layer that bridges cloud telemetry and orchestration systems (e.g., Kubernetes, OpenStack, Azure Stack) with existing IETF network models, enabling translation of cloud-scale events (e.g., service up/down, resource scaling) into actionable network control inputs.
 
