@@ -14,10 +14,11 @@ Neotec will initially focus on the following deliverables:
 
 * Develop YANG models to provide network controllers with cloud service instance status, dynamic adjustment to network connections and traffic steering policies—whenever cloud services scale up or down. These updates allow the network to seamlessly accommodate changes without requiring detailed visibility into internal cloud structures.
 
-* Contributing to the YANG2API effort by specifying the semantic and behavioral constructs needed to make IETF YANG models practically consumable via open APIs (e.g., REST, gRPC) in cloud-native environments. 
+* Contributing to the YANG2API effort by specifying the semantic and behavioral constructs needed to make IETF YANG models practically consumable via open APIs (e.g., REST, gRPC) in cloud-native environments.
+
+* Develop operational guidance on operationalizing network/service models and APIs to meets the Neotec's primary goal.
 
 Neotec will also serve as a platform for the community to exchange requirements, challenges, and experiences related to network management and operation for cloud-based services.
-
 
 ## Out of Scope
 It should be noted that Neotec focuses on addressing the network issues, not that of cloud scheduling or management issues. It does not handle service instance placement within cloud environments. Instead, it focuses on providing relevant information between cloud and network to achieve joint optimization for cloud-based services. It does not aim to develop an orchestrator production system either.
