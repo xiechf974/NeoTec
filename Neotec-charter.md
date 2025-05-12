@@ -16,7 +16,7 @@ Neotec will initially focus on the following deliverables:
 
 * Contributing to the YANG2API effort by specifying the semantic and behavioral constructs needed to make IETF YANG models practically consumable via open APIs (e.g., REST, gRPC) in cloud-native environments.
 
-* Develop operational guidance on operationalizing network/service models and APIs to meets the Neotec's primary goal.
+* Develop guidance on operationalizing network/service models and APIs to meets the Neotec's primary goal.
 
 Neotec will also serve as a platform for the community to exchange requirements, challenges, and experiences related to network management and operation for cloud-based services.
 
